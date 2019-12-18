@@ -16,6 +16,9 @@ console.log(kmPasseggero);
 
 // Chiedere l'età del passeggero
 
+var etaPasseggero = parseInt(prompt("Quanti anni hai?"));
+console.log(etaPasseggero);
+
 // dichiarare una variabile costoBiglietto che 1 km equivale a 0,21 euro
 
 // moltiplicare i km inseriti del passeggero con la variabile costoBiglietto
