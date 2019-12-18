@@ -19,14 +19,20 @@ console.log(kmPasseggero);
 var etaPasseggero = parseInt(prompt("Quanti anni hai?"));
 console.log(etaPasseggero);
 
-// dichiarare una variabile costoBiglietto che 1 km equivale a 0,21 euro
+// moltiplicare i km inseriti del passeggero con la variabile costoBiglietto
 
 var costoBiglietto = kmPasseggero * 0.21;
 console.log(costoBiglietto);
 
+// dichiarare variabile sconto minorenne
 
-// moltiplicare i km inseriti del passeggero con la variabile costoBiglietto
+var scontoMinorenne = (costoBiglietto * 20) / 100 ;
 
 // inserire la condizione che se il passeggero è minorenne verrà applicato un 20% di sconto
+
+if (etaPasseggero < 18) {
+  console.log(costoBiglietto - scontoMinorenne);
+}
+
 
 // inserire la condizione che il passeggero over 65 pagherà con un 40% di sconto
