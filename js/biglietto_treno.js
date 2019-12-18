@@ -36,10 +36,23 @@ if (isNaN(kmPasseggero) || isNaN(etaPasseggero)) {
   alert("Non hai inserito un numero valido")
 }
 
+// if (etaPasseggero < 18) {
+//   console.log(costoBiglietto - scontoMinorenne);
+// } else if (etaPasseggero > 65) {
+//   console.log(costoBiglietto - scontoOver65);
+// } else {
+//   console.log(costoBiglietto);
+// }
+
+
 if (etaPasseggero < 18) {
-  console.log(costoBiglietto - scontoMinorenne);
+  // console.log(costoBiglietto - scontoMinorenne);
+  document.getElementById("km_passeggero").innerHTML = (kmPasseggero - scontoMinorenne);
 } else if (etaPasseggero > 65) {
-  console.log(costoBiglietto - scontoOver65);
+  // console.log(costoBiglietto - scontoOver65);
+  document.getElementById("eta_passeggero").innerHTML = (etaPasseggero -scontoOver65);
 } else {
-  console.log(costoBiglietto);
+  // console.log(costoBiglietto);
+  document.getElementById("costo_biglietto").innerHTML = costoBiglietto;
+
 }
