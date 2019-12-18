@@ -3,3 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: sans-serif;
+  color: white;
+}
+
+.container {
+  height: 200px;
+  width: 100%;
+  background-color: red;
+  text-align: center;
+  line-height: 200px;
+  vertical-align: middle;
+  font-size: 30px;
+}

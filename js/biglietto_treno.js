@@ -32,9 +32,7 @@ var scontoOver65 = (costoBiglietto * 40) / 100;
 
 // inserire la condizioni con sconto passeggero
 
-if (isNaN(kmPasseggero) || isNaN(etaPasseggero)) {
-  alert("Non hai inserito un numero valido")
-}
+
 
 // if (etaPasseggero < 18) {
 //   console.log(costoBiglietto - scontoMinorenne);
@@ -44,12 +42,14 @@ if (isNaN(kmPasseggero) || isNaN(etaPasseggero)) {
 //   console.log(costoBiglietto);
 // }
 
-
-if (etaPasseggero < 18) {
+//  {
+ if (etaPasseggero < 18) {
   document.getElementById("costo_biglietto").innerHTML = "Hai " + etaPasseggero + " anni. Essendo minorenne hai diritto ad uno sconto del 20%! Il prezzo del tuo biglietto è: " + (costoBiglietto - scontoMinorenne);
 } else if (etaPasseggero > 65) {
   document.getElementById('costo_biglietto').innerHTML = "Hai " + etaPasseggero + " anni. Gli over 65 hanno diritto ad uno sconto del 40%! Il prezzo del tuo biglietto è: " + (costoBiglietto - scontoOver65);
-} else {
+} else if (isNaN(kmPasseggero) || isNaN(etaPasseggero)) {
+  alert("Non hai inserito un numero valido");
+  document.getElementById('costo_biglietto').innerHTML = "Inserisci di nuovi i dati"
+  } else {
   document.getElementById('costo_biglietto').innerHTML = "Hai " + etaPasseggero + " anni. Il costo del tuo biglietto è " + costoBiglietto;
-
 }
