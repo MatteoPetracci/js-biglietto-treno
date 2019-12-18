@@ -11,6 +11,9 @@
 
 // Chiedere i km che vuole percorrere il passeggero
 
+var kmPasseggero = parseInt(prompt("Quanti km devi percorrere?"));
+console.log(kmPasseggero);
+
 // Chiedere l'età del passeggero
 
 // dichiarare una variabile costoBiglietto che 1 km equivale a 0,21 euro
