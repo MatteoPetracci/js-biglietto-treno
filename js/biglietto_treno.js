@@ -21,6 +21,10 @@ console.log(etaPasseggero);
 
 // dichiarare una variabile costoBiglietto che 1 km equivale a 0,21 euro
 
+var costoBiglietto = kmPasseggero * 0.21;
+console.log(costoBiglietto);
+
+
 // moltiplicare i km inseriti del passeggero con la variabile costoBiglietto
 
 // inserire la condizione che se il passeggero è minorenne verrà applicato un 20% di sconto
