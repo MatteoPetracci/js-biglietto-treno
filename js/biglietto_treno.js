@@ -32,6 +32,10 @@ var scontoOver65 = (costoBiglietto * 40) / 100;
 
 // inserire la condizioni con sconto passeggero
 
+if (isNaN(kmPasseggero) || isNaN(etaPasseggero)) {
+  alert("Non hai inserito un numero valido")
+}
+
 if (etaPasseggero < 18) {
   console.log(costoBiglietto - scontoMinorenne);
 } else if (etaPasseggero > 65) {
