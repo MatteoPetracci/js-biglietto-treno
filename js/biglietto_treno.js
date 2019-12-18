@@ -28,11 +28,14 @@ console.log(costoBiglietto);
 
 var scontoMinorenne = (costoBiglietto * 20) / 100 ;
 
-// inserire la condizione che se il passeggero è minorenne verrà applicato un 20% di sconto
+var scontoOver65 = (costoBiglietto * 40) / 100;
+
+// inserire la condizioni con sconto passeggero
 
 if (etaPasseggero < 18) {
   console.log(costoBiglietto - scontoMinorenne);
+} else if (etaPasseggero > 65) {
+  console.log(costoBiglietto - scontoOver65);
+} else {
+  console.log(costoBiglietto);
 }
-
-
-// inserire la condizione che il passeggero over 65 pagherà con un 40% di sconto
